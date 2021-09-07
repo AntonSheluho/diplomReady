@@ -1,0 +1,268 @@
+.proect {
+    background: rgba(0, 0, 0, 0.09);
+    width: 100vw;
+    height: 658px;
+}
+
+.proect__section {
+    display: grid;
+    grid: 150px 100px 276px 130px / 100%;
+    position: relative;
+}
+
+.section__btn {
+    display: flex;
+    height: 100%;
+    width: 900px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 258px;
+    height: 45px;
+    border-radius: 35px;
+    border: 0px;
+    background: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.btn:hover {
+    background: #FFA801;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    color: white;
+}
+
+
+.flex-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+  
+.slider-wrapper {
+    width: 100%;
+    height: 276px;
+    position: relative;
+}
+    
+.slide {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+  
+.slide.active {
+    display:flex;
+}
+
+.clubs {
+    min-width: 373.33px;
+    height: 274px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clubs__block {
+    width: 350px;
+    height: 250px;
+    display: flex;
+    background: url(./img/clubs.jpg);
+    background-size: cover;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition-duration: 0.5s;
+    position: relative;
+}
+
+.clubs__block:hover .aside {
+    display: inline;
+}
+
+.gyms__block:hover .aside {
+    display: inline;
+}
+
+.centers__block:hover .aside {
+    display: inline;
+}
+
+.clubs__block:hover .block__text {
+    font-size: 18px;
+    transition-duration: 0.5s;
+}
+
+.gyms__block:hover .block__text {
+    font-size: 18px;
+    transition-duration: 0.5s;
+}
+
+.centers__block:hover .block__text {
+    font-size: 18px;
+    transition-duration: 0.5s;
+}
+
+.gyms__block {
+    width: 350px;
+    height: 250px;
+    display: flex;
+    background: url(./img/gyms.jpg);
+    background-size: cover;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition-duration: 0.5s;
+    position: relative;
+}
+
+.centers__block {
+    width: 350px;
+    height: 250px;
+    display: flex;
+    background: url(./img/centers.jpg);
+    background-size: cover;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    transition-duration: 0.5s;
+}
+
+.block__back {
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.block__text {
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    justify-self: center;
+    text-align: center;
+    z-index: 2;
+    transition-duration: 1s;
+    position: relative;
+    top: 0px;
+}
+
+.aside {
+    display: none;
+    transition-duration: 1s;
+}
+
+.block__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 50px;
+    border-radius: 35px;
+    border: 0px;
+    background: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color: black;
+    transition-duration: 0.5s;
+    z-index: 2;
+}
+
+.block__button:hover {
+    background: #FFA801;
+    color: white;
+}
+
+
+.gyms {
+    min-width: 373.33px;
+    height: 274px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.centers {
+    min-width: 373.33px;
+    height: 274px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.dots-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+  
+.dot.active {
+    background: #FFA801;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  color: white;
+}
+
+.slider__back {
+    width: 30px;
+    height: 50px;
+    border: 0px;
+    padding: 0px;
+}
+
+.slider__next {
+    width: 30px;
+    height: 50px;
+    border: 0px;
+    padding: 0px;
+}
+
+.slider__img {
+    width: 30px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.slider__img2 {
+    transform: rotate(180deg);
+    width: 30px;
+    height: 50px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.slider__back:hover {
+    width: 35px;
+    height: 55px;
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.slider__next:hover {
+    width: 35px;
+    height: 55px;
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.section__box {
+    grid-row: 4;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}

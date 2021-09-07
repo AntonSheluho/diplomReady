@@ -1,0 +1,102 @@
+.contact__all {
+    display: flex;
+    flex-direction: column;
+}
+
+.all__tagline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tagline__logo {
+    display: flex;
+    flex-direction: row;
+    height: 110px;
+    align-items: center;
+}
+
+.tagline__date {
+    align-self: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.tagline__icons {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    width: 120px;
+}
+
+.icons {
+    width: 24px;
+    height: 24px;
+}
+
+.all__aside {
+    display: grid;
+    grid: 36px 145px / 1fr 164px 205px 228px 165px 277px 1fr;
+    grid-template-areas: 
+        ". comp      servis      our      buyer      adr      ." 
+        ". comp_text servis_text our_text buyer_text adr_text ."
+    ;
+}
+
+.aside__tag1 {
+    grid-area: comp;
+}
+
+.aside__tag2 {
+    grid-area: servis;
+}
+
+.aside__tag3 {
+    grid-area: our;
+}
+
+.aside__tag4 {
+    grid-area: buyer;
+}
+
+.aside__tag5 {
+    grid-area: adr;
+}
+
+.aside__text1 {
+    grid-area: comp_text;
+}
+
+.aside__text2 {
+    grid-area: servis_text;
+}
+
+.aside__text3 {
+    grid-area: our_text;
+}
+
+.aside__text4 {
+    grid-area: buyer_text;
+}
+
+.aside__text5 {
+    grid-area: adr_text;
+}
+
+.all__text {
+    font-size: 10px;
+    text-align: center;
+} 
+
+.tag {
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+
+.tag2 {
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}

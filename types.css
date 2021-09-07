@@ -1,0 +1,60 @@
+.types__trainer {
+    display: grid;
+    grid: 218px 549px / 100%
+}
+
+.trainer__tag {
+    display: grid;
+    grid-template-columns: 25px 330px 1fr;
+} 
+
+.tag__square {
+    width: 75px;
+    height: 88px;
+    border-top: 3px solid #FFA801;
+    border-bottom: 3px solid #FFA801;
+    border-left: 3px solid #FFA801;
+    align-self: center;
+}
+
+.tag__text {
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    flex-direction: column;
+}
+
+.text {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Montserrat;
+}
+
+.trainer__type {
+    display: grid;
+    grid: 259px 259px / repeat(3, 1fr);
+    column-gap: 40px;
+    row-gap: 31px;
+    position: relative;
+}
+
+.moby {
+    width: 130px;
+    justify-self: center;
+    align-self: center;
+}
+
+.moby__link {
+    display: none;
+    font-size: 12px;
+    font-weight: 500;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration-color: #FFA801;
+    transition-duration: 0.5s;
+}
+
+.moby__link:hover {
+    font-size: 14px;
+}

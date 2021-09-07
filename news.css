@@ -1,0 +1,113 @@
+.news__sect {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 116px 88px 56px 335px;
+}
+
+.trainer__tags {
+    grid-row: 2;
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: 25px 330px;
+}
+
+.sect__trainers {
+    grid-row: 4;
+    display: grid;
+    grid: 100% / 262px 262px 262px 262px ;
+    column-gap: 24px;
+}
+
+.trainers {
+    width: 262px;
+    height: 335px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:  242px 91px;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.159);
+    border-radius: 10px;
+    position: relative;
+    bottom: 0;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+.trainers__img {
+    width: 230px;
+    height: 223px;
+    justify-self: center;
+    align-self: center;
+    position: relative;
+    top: 5px;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+.trainers__text {
+    width: 240px;
+    height: 68px;
+    background: rgba(0, 0, 0, 0.09);
+    border-radius: 0px  10px 10px 0px;
+    justify-self: left;
+    align-self: center;
+    display: grid;
+    grid: 100% / 70% 1fr;
+}
+
+.trainers__text__text {
+    font-size: 12px;
+    font-weight: 700;
+    padding-left: 10px;
+    align-self: center;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+.link__arrow {
+    display: none;
+}
+
+.arrow {
+    display:none;
+    width: 90px;
+    height: 10px;
+}
+
+.trainers:hover {
+    bottom: 10px;
+    display: block;
+    background: #ffa601de;
+}
+
+.trainers:hover .trainers__img {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    z-index: -1;
+}
+
+.trainers:hover .trainers__text {
+    background: none;
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    grid: 57px 40px / 100%;
+}
+
+.trainers:hover .trainers__text .trainers__text__text {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.trainers:hover .link__arrow {
+    display: block;
+    align-self: center;
+
+}
+
+.trainers:hover .arrow {
+    display: block;
+    align-self: center;
+
+}
