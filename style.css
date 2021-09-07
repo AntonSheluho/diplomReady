@@ -19,6 +19,7 @@
 @import url(./contact.css);
 
 body {
+    min-width: 100vw;
     margin: 0px auto;
     overflow-x: hidden;
     display: grid;
@@ -422,7 +423,7 @@ body {
         transition-duration: 1s;
     }
 
-    .active {
+    .content__menu.active {
         top: 0px;
         transition-duration: 1s;
     }
@@ -753,9 +754,8 @@ body {
 
     .adres {
         position: fixed;
-        
         z-index: 20;
-        width: 100%;
+        width: 100vw;
         height: 50px;
     }
 
@@ -764,7 +764,7 @@ body {
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 100vw;
         height: 50px;
         background: white;
         border-radius: 0px 0px 10px 10px;
@@ -799,21 +799,36 @@ body {
         width: 100%;
         height: 2px;
         left: 0;
+        transition-duration: .5s;
     }
 
     .content__burger::before {
         top: 0;
     }
 
+    .content__burger.active::before {
+        transform: rotate(45deg);
+        top: 8px;
+    }
+
     .content__burger::after {
         top: 16px;
+    }
+
+    .content__burger.active::after {
+        transform: rotate(-45deg);
+        top: 8px;
+    }
+
+    .content__burger.active span {
+        display: none;
     }
 
     .content__menu {
         position: fixed;
         top: -363px;
         left: 0px;
-        width: 100%;
+        width: 100vw;
         height: 300px;
         background-color: white;
         text-align: center;
@@ -823,7 +838,7 @@ body {
         transition-duration: 1s;
     }
 
-    .active {
+    .content__menu.active {
         top: 0px;
         transition-duration: 1s;
     }
