@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./adres.js" defer></script>
     <script src="./main.js" defer></script>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet/less" type="text/css" href="style.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
     <title>ProfiSport</title>
 </head>
 <body>
@@ -35,7 +36,7 @@
                             <svg class="img__svg" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 513.64 513.64" style="enable-background:new 0 0 513.64 513.64;" xml:space="preserve"><g><g><path d="M499.66,376.96l-71.68-71.68c-25.6-25.6-69.12-15.359-79.36,17.92c-7.68,23.041-33.28,35.841-56.32,30.72c-51.2-12.8-120.32-79.36-133.12-133.12c-7.68-23.041,7.68-48.641,30.72-56.32c33.28-10.24,43.52-53.76,17.92-79.36l-71.68-71.68c-20.48-17.92-51.2-17.92-69.12,0l-48.64,48.64c-48.64,51.2,5.12,186.88,125.44,307.2c120.32,120.32,256,176.641,307.2,125.44l48.64-48.64C517.581,425.6,517.581,394.88,499.66,376.96z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
                         </div>
                         <div class="button button_tell">+7 (999) 999-99-99</div>
-                        <div class="phone__text">Режим: с9 до 22 ежедневно</div>
+                        <div class="phone__text">Режим: с 9 до 22 ежедневно</div>
                     </a>
                 </div>
                 <form class="content__search" action="post">
@@ -60,17 +61,14 @@
                     <div class="slogon__title">
                         <div class="title__square"></div>
                         <div class="title__cont">
-                            <div class="cont__title">Заголовокслайдера ЗаголовокслайдераЗаголовокслайдера
-                            </div>
-                            <div class="cont__title2">Заголовок слайдера Заголовок слайдераЗаголовок слайдера
-                            </div>
+                            <div class="cont__title">Заголовокслайдера ЗаголовокслайдераЗаголовокслайдера</div>
+                            <div class="cont__title2">Заголовок слайдера Заголовок слайдераЗаголовок слайдера</div>
                             <div class="cont__text">Заголовок слайдера Заголовок слайдера Заголовок слайдераЗаголовок слайдера Заголовок слайдера Заголовок слайдераЗаголовок слайдера Заголовок слайдера
                             </div>
                             <div class="cont__text2">Подзаголовок слайдера Подзаголовок слайд ера Подзаголовок слайдераПодзаголовок слайдера Подзаголовок слайдера Подзаголовок слайдераПодза головок слайдера Подзаголовок слайдера
                             </div>
                             <a class="link__a cont__button" href="https://google.com" target="_blank">
-                                <div class=" link__butt">Подробнее                                    
-                                </div>
+                                <div class=" link__butt">Подробнее</div>
                             </a>
                         </div>
                     </div>
@@ -270,12 +268,12 @@
                 </div>
                 <div class="section__box">
                     <div class="box__slider">
-                        <button class="slider__back" id="btn-prev">
+                        <div class="slider__back" id="btn-prev">
                             <img class="slider__img" src="./img/back.svg" alt="arrow">
-                        </button>
-                        <button class="slider__next" id="btn-next">
+                        </div>
+                        <div class="slider__next" id="btn-next">
                             <img class="slider__img2" src="./img/back.svg" alt="arrow">
-                        </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -296,7 +294,9 @@
                         <div class="trainers__text">
                             <div class="trainers__text__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, neque!
                             </div>
-                            <a class="link__arrow" href=""><img class="arrow" src="./img/arrow.png" alt="arrow"></a>
+                            <a class="link__arrow" href="https://google.com" target="_blank">
+                                <img class="arrow" src="./img/arrow.png" alt="arrow">
+                            </a>
                         </div>
                     </div>
                     <div class="trainers">
@@ -304,7 +304,9 @@
                         <div class="trainers__text">
                             <div class="trainers__text__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, neque!
                             </div>
-                            <a class="link__arrow" href=""><img class="arrow" src="./img/arrow.png" alt="arrow"></a>
+                            <a class="link__arrow" href="https://google.com" target="_blank">
+                                <img class="arrow" src="./img/arrow.png" alt="arrow">
+                            </a>
                         </div>
                     </div>
                     <div class="trainers">
@@ -312,7 +314,9 @@
                         <div class="trainers__text">
                             <div class="trainers__text__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, neque!
                             </div>
-                            <a class="link__arrow" href=""><img class="arrow" src="./img/arrow.png" alt="arrow"></a>
+                            <a class="link__arrow" href="https://google.com" target="_blank">
+                                <img class="arrow" src="./img/arrow.png" alt="arrow">
+                            </a>
                         </div>
                     </div>
                     <div class="trainers">
@@ -320,7 +324,9 @@
                         <div class="trainers__text">
                             <div class="trainers__text__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, neque!
                             </div>
-                            <a class="link__arrow" href=""><img class="arrow" src="./img/arrow.png" alt="arrow"></a>
+                            <a class="link__arrow" href="https://google.com" target="_blank">
+                                <img class="arrow" src="./img/arrow.png" alt="arrow">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -351,32 +357,35 @@
                     </div>
                 </div>
                 <div class="katalog__trainers">
-                    <div class="trainers_logo">
+                    <div class="trainers__logo">
                         <div class="trainers__logo__text">Предлагаем вам прямо сейчас ознакомиться с нашими каталогами:</div>
                     </div>
                     <div class="katalog__trns">
                         <div class="trns__text">
-                            <div class="trns__text__text">уличное оборудование 
-                            </div>
-                            <a class="link__arrow" href=""><img class="arrow" src="./img/arrow.png" alt="arrow"></a>
+                            <div class="trns__text__text">уличное оборудование</div>
+                            <a class="link__arrow" target="_blank" href="https://google.com">
+                                <img class="arrow" src="./img/arrow.png" alt="arrow">
+                            </a>
                         </div>
                         <img class="trainers__img" src="./img/tren_4.png" alt="trainer">
                         <div class="trns__back"></div>
                     </div>
                     <div class="katalog__trns">
                         <div class="trns__text">
-                            <div class="trns__text__text">оборудование для залов
-                            </div>
-                            <a class="link__arrow" href=""><img class="arrow" src="./img/arrow.png" alt="arrow"></a>
+                            <div class="trns__text__text">оборудование для залов</div>
+                            <a class="link__arrow" target="_blank" href="https://google.com">
+                                <img class="arrow" src="./img/arrow.png" alt="arrow">
+                            </a>
                         </div>
                         <img class="trainers__img" src="./img/tren_3.png" alt="trainer">
                         <div class="trns__back"></div>
                     </div>
                     <div class="katalog__trns">
                         <div class="trns__text">
-                            <div class="trns__text__text">спортивное оборудование
-                            </div>
-                            <a class="link__arrow" href=""><img class="arrow" src="./img/arrow.png" alt="arrow"></a>
+                            <div class="trns__text__text">спортивное оборудование</div>
+                            <a class="link__arrow" target="_blank" href="https://google.com">
+                                <img class="arrow" src="./img/arrow.png" alt="arrow">
+                            </a>
                         </div>
                         <img class="trainers__img" src="./img/tren_2.png" alt="trainer">
                         <div class="trns__back"></div>
@@ -395,8 +404,7 @@
                 <div class="list__subtitle">В случае заинтересованности готовы направить вам прайс-лист с оптовыми ценами.</div>
                 <div class="list__form">
                     <form class="form" action="post">
-                        <input class="form__email" type="email" name="email" placeholder="Введите Ваш Email"
-                        >
+                        <input class="form__email" type="email" name="email" placeholder="Введите Ваш Email">
                         <input class="form__butt button" type="button" value="Продолжить">
                     </form>
                 </div>

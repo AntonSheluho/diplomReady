@@ -15,7 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 882px;
+    width: 850px;
 }
 
 .content__logo {
@@ -23,17 +23,15 @@
 }
 
 .content__logo_p {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
-    color: #FFA801;
-    font-family: Russo One;
+    color: @color3;
     justify-self: right;
 }
 
 .content__logo_s {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
-    font-family: Russo One;
     justify-self: left;
 }
 
@@ -44,9 +42,9 @@
     height: 30px;
     font-size: 12px;
     text-decoration: none;
-    background:  #FFA801;
-    color: white;
-    border-radius: 35px;
+    background:  @color3;
+    color: @color1;
+    border-radius: @border-radius_35px;
     justify-content:space-around;
     align-items: center;
     transition-duration: 0.5s;
@@ -59,21 +57,20 @@
 .button_key__svg {
     width: 14px;
     height: 14px;
-    fill: white;
-    stroke: white;
+    fill: @color1;
+    stroke: @color1;
 }
 
 .content__text {
     color: #6C757D;
     font-size: 12px;
-    font-family: Montserrat;
     font-weight: normal;
     justify-self: center;
     text-decoration: none;
 } 
 
 .content__text:hover {
-    color: black;
+    color: @color2;
 }
 
 .content__phone {
@@ -95,12 +92,12 @@
 .tell__img {
     width: 30px;
     height: 30px;
-    background: white;
+    background: @color1;
     position: absolute;
     top: 8px;
     left: 0px;
-    border-radius: 16px;
-    border: 1px solid white;
+    border-radius: @border-radius_35px;
+    border: 1px solid @color1;
     box-shadow: 0 0 5px black;
     display: flex;
     justify-content: center;
@@ -108,7 +105,7 @@
 }
 
 .img__svg {
-    fill: #FFA801;
+    fill: @color3;
     width: 13px;
     height: 13px;
 
@@ -124,14 +121,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: black;
+    color: @color2;
 }
 
 .phone__text {
     font-size: 8px;
     text-align: center;
     grid-row: 3;
-    color: #000;
+    color: @color2;
 }
 
 .content__search {
@@ -141,9 +138,8 @@
 .search__item {
     width: 139px;
     height: 30px;
-    border-radius: 14.4171px;
-    border: 1px solid  #FFA801;
-    outline: none;
+    border-radius: @border-radius_35px;
+    border: 1px solid  @color3;
 }
 
 .item__butt {
@@ -153,14 +149,14 @@
     top: 0px;
     right: 0px;
     border-radius: 16px;
-    border: 2px solid  #FFA801;
-    background: #FFA801;
+    border: 2px solid  @color3;
+    background: @color3;
 }
 
 .search__svg {
     width: 10px;
     height: 10px;
-    fill: white;
+    fill: @color1;
 }
 
 .button_on {
@@ -179,11 +175,11 @@
     height: 12px;
     justify-self: center;
     align-self: center;
-    fill: white;
+    fill: @color1;
 }
 
 .input__text {
     justify-self: center;
     align-self: center;
-    color: white;
+    color: @color1;
 }

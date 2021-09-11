@@ -1,4 +1,5 @@
 .logo {
+    grid-area: logo;
     position: relative;
     background: url(./img/luis-reyes-mTorQ9gFfOg-unsplash.jpg);
     background-position: center;
@@ -22,13 +23,13 @@
 
 .slogon__title {
     display: grid;
-    grid-template-columns: 81px 660px 1fr;
+    grid-template-columns: 81px 660px;
 }
 
 .title__square {
-    border-top: 10px solid #FFA801;
-    border-bottom: 10px solid #FFA801;
-    border-left: 10px solid #FFA801;
+    border-top: @border_logo;
+    border-bottom: @border_logo;
+    border-left: @border_logo;
     width: 255px;
     height: 300px;
     box-sizing: border-box;
@@ -46,8 +47,7 @@
     height: 103px;
     font-size: 34px;
     font-weight: 700;
-    font-family: Montserrat;
-    color: #FFFFFF;
+    color: @color1;
 }
 
 .cont__title2 {
@@ -56,8 +56,7 @@
     height: 93px;
     font-size: 18px;
     font-weight: 700;
-    font-family: Montserrat;
-    color: #FFFFFF;
+    color: @color1;
 }
                   
 .cont__text {
@@ -65,8 +64,7 @@
     height: 90px;
     font-size: 18px;
     font-weight: 400;
-    font-family: Mulish;
-    color: #FFFFFF;
+    color: @color1;
     justify-self: center;
 }
 
@@ -76,8 +74,7 @@
     height: 105px;
     font-size: 12px;
     font-weight: 400;
-    font-family: Mulish;
-    color: #FFFFFF;
+    color: @color1;
     justify-self: center;
 }
 
@@ -90,9 +87,9 @@
     height: 50px;
     border-radius: 25.5px;
     text-align: center;
-    color: #FFFFFF;
-    background: #FFA801;
-    border-radius: 35px;
+    color: @color1;
+    background: @color3;
+    border-radius: @border-radius_35px;
     border: 0px;
     cursor: pointer;
     transition-duration: 0.5s;
@@ -110,15 +107,13 @@
     height: 250px;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 .info__title {
-    font-family: Montserrat;
     font-weight: 900;
     font-size: 26px;
     letter-spacing: 0.13em;
-    color: #FFFFFF;
+    color: @color1;
 }
 
 .info__content {
@@ -131,8 +126,7 @@
 }
 
 .info__content__text {
-    font-family: Mulish;
     font-size: 18px;
     font-weight: 600;
-    color: #FFFFFF;
-}
+    color: @color1;
+}    

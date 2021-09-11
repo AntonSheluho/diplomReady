@@ -1,6 +1,12 @@
+.contact {
+    grid-area: contact;
+}
+
 .contact__all {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
 }
 
 .all__tagline {
@@ -37,8 +43,8 @@
     display: grid;
     grid: 36px 145px / 1fr 164px 205px 228px 165px 277px 1fr;
     grid-template-areas: 
-        ". comp      servis      our      buyer      adr      ." 
-        ". comp_text servis_text our_text buyer_text adr_text ."
+        ". comp      serv      our      buyer      adr      ." 
+        ". comp_text serv_text our_text buyer_text adr_text ."
     ;
 }
 
@@ -47,7 +53,7 @@
 }
 
 .aside__tag2 {
-    grid-area: servis;
+    grid-area: serv;
 }
 
 .aside__tag3 {
@@ -67,7 +73,7 @@
 }
 
 .aside__text2 {
-    grid-area: servis_text;
+    grid-area: serv_text;
 }
 
 .aside__text3 {
@@ -91,12 +97,12 @@
     font-weight: 600;
     font-size: 14px;
     text-decoration: none;
-    color: black;
+    color: @color2;
 }
 
 .tag2 {
     font-weight: 600;
     font-size: 14px;
     text-decoration: none;
-    color: black;
+    color: @color2;
 }

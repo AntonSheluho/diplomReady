@@ -1,29 +1,29 @@
-@import url(./style.less);
+@import url(./variable.less);
 
-@import url(./adres.css);
+@import url(./adres.less);
 
-@import url(./logo.css);
+@import url(./logo.less);
 
-@import url(./types.css);
+@import url(./types.less);
 
-@import url(./proect.css);
+@import url(./proect.less);
 
-@import url(./news.css);
+@import url(./news.less);
 
-@import url(./servic.css);
+@import url(./servic.less);
 
-@import url(./katalog.css);
+@import url(./katalog.less);
 
-@import url(price.css);
+@import url(./price.less);
 
-@import url(./contact.css);
+@import url(./contact.less);
 
 body {
     min-width: 100vw;
     margin: 0px auto;
     overflow-x: hidden;
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 100vw;
     grid-template-rows: 70px 683px 910px 658px 718px 381px 701px 234px 442px;
     grid-template-areas: 
     "adres"
@@ -32,22 +32,25 @@ body {
     "proect"
     "news"
     "servic"
-    "catalog"
+    "katalog"
     "price"
     "contact"
     ;
 }
 
-.conteiner {
-    max-width: 1120px;
-    height: 100%;
-    margin: 0 auto;
+.loke {
+    overflow: hidden;
 }
 
+.conteiner {
+    max-width: 1120px;
+    margin: 0 auto;
+    height: 100%;
+}
 
 .button {
-    background: #FFA801;
-    border-radius: 35px;
+    background: @color3;
+    border-radius: @border-radius_35px;
     border: 0px;
     cursor: pointer;
     transition-duration: 0.5s;
@@ -60,118 +63,6 @@ body {
 .link__a {
     text-decoration: none;
     z-index: 2;
-}
-
-.type {
-    display: grid;
-    grid: 82px 1fr / 40% 60%;
-    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.159);
-    border-radius: 10px;
-    position: relative;
-    bottom: 0;
-    transition-duration: 1s;
-    transition-timing-function: ease;
-}
-
-.type:hover {
-    bottom: 10px;
-    display: block;
-    background: #ffa601de;
-}
-
-.type:hover .type__title {
-    position: absolute;
-    top: 100px;
-    left: 50px;
-}
-
-.type:hover .type__title .type__title__text {
-    color: white;
-}
-
-.type:hover .type__link {
-    position: absolute;
-    bottom: 5px;
-    left: 20px;
-    color: white;
-}
-
-.type:hover .type__img {
-    position: absolute;
-    top: 50px;
-    left: 140px;
-    z-index: -1;
-}
-
-.type:hover .type__back {
-    display: none;
-}
-
-.type__title {
-    grid-column: 1/3;
-    grid-row: 1;
-    align-self: center;
-    justify-self: center;
-    top: 0px;
-    left: 50px;
-    transition-duration: 1s;
-    transition-timing-function: ease;
-}
-
-.type__title__text {
-    font-family: Montserrat;
-    font-weight: 800;
-    font-size: 22px;
-    color: #FFA801;
-    text-transform: uppercase;
-    transition-duration: 1s;
-    transition-timing-function: ease;
-}
-
-.type__link {
-    width: 99px;
-    height: 18px;
-    font-family: Montserrat;
-    font-weight: 600;
-    font-size: 14px;
-    color: #152536;
-    text-decoration: none;
-    grid: 2 / 1;
-    justify-self: center;
-    align-self: flex-end;
-    padding-bottom: 10px;
-    bottom: 5px;
-    left: 20px;
-    transition-duration: 1s;
-    transition-timing-function: ease;
-}
-
-.type__img {
-    width: 192px;
-    height: 177px;
-    grid-column: 2;
-    grid-row: 2;
-    top: 85px;
-    left: 140px;
-    transition-duration: 1s;
-    transition-timing-function: ease;
-}
-
-.type__back {
-    position: absolute;
-    top: 129px;
-    left: 0px;
-    width: 346.66px;
-    height: 130px;
-    clip-path: polygon(0 73%, 100% 0, 100% 100%, 0% 100%);
-    background: #FFA801;
-    border-radius: 0px 0px 10px 10px;
-    z-index: -1;
-}
-
-.phone {
-    font-size: 12px;
-    font-weight: 400;
 }
 
 @media (max-width: 1140px) {
@@ -332,8 +223,8 @@ body {
     .all__aside {
         grid: 36px 145px / 1fr 113px 154px 166px 117px 192px 1fr;
         grid-template-areas:
-        ". comp servis our buyer adr ."
-        ". comp_text servis_text our_text buyer_text adr_text .";
+        ". comp serv our buyer adr ."
+        ". comp_text serv_text our_text buyer_text adr_text .";
     }
     
     .all__text {
@@ -343,7 +234,17 @@ body {
 
 @media (max-width: 803px) {
     body {
-        grid-template-rows: 683px 1210px 1043px 1194px 443px 1401px 315px 442px;
+        grid-template-rows: 683px 1210px 1043px 1194px 443px 1401px 315px 932px;
+        grid-template-areas: 
+        "logo"
+        "types"
+        "proect"
+        "news"
+        "servic"
+        "katalog"
+        "price"
+        "contact"
+        ;
     }
 
     .conteiner {
@@ -368,6 +269,7 @@ body {
         height: 50px;
         background: white;
         border-radius: 0px 0px 10px 10px;
+        border-bottom: 1px solid #00000061;
     }
 
     .adres__content {
@@ -399,19 +301,34 @@ body {
         width: 100%;
         height: 2px;
         left: 0;
+        transition-duration: .5s;
     }
 
     .content__burger::before {
         top: 0;
     }
 
+    .content__burger.active::before {
+        transform: rotate(45deg);
+        top: 8px;
+    }
+
     .content__burger::after {
         top: 16px;
     }
 
+    .content__burger.active::after {
+        transform: rotate(-45deg);
+        top: 8px;
+    }
+
+    .content__burger.active span {
+        display: none;
+    }
+
     .content__menu {
         position: fixed;
-        top: -380px;
+        top: -115%;
         left: 0px;
         width: 100%;
         height: 300px;
@@ -541,7 +458,7 @@ body {
     }
 
     .type__back {
-        width: 441px;
+        width: 441.5px;
         height: 171px;
     }
 
@@ -665,8 +582,8 @@ body {
         justify-items: center;
     }
 
-    .katalog__logo {
-        justify-self: start;
+    .trainers__logo {
+        justify-self: baseline;
     }
 
     .trainers__logo__text {
@@ -686,7 +603,7 @@ body {
     } 
 
     .trns__back {
-        width: 441px;
+        width: 441.5px;
     }
 
     .list__title {
@@ -709,6 +626,8 @@ body {
 
     .tagline__date {
         font-size: 11px;
+        width: 157px;
+        text-align: end;
     }
 
     .all__aside {
@@ -716,8 +635,8 @@ body {
         grid-template-areas:
         "comp" 
         "comp_text" 
-        "servis"
-        "servis_text" 
+        "serv"
+        "serv_text" 
         "our" 
         "our_text" 
         "buyer" 
@@ -744,18 +663,28 @@ body {
 
 @media (max-width: 542px) {
     body {
-        grid-template-rows: 683px 1097px 1043px 1328px 478px 1401px 315px 442px;
+        grid: 683px 1097px 1043px 1328px 478px 1401px 315px 1090px / 100vw;
+        grid-template-areas: 
+        "logo"
+        "types"
+        "proect"
+        "news"
+        "servic"
+        "katalog"
+        "price"
+        "contact"
+        ;
     }
     
     .conteiner {
         max-width: 320px;
-        padding: 0px 5px;
+        padding: 0px 0px;
     }
 
     .adres {
         position: fixed;
         z-index: 20;
-        width: 100vw;
+        width: 100%;
         height: 50px;
     }
 
@@ -768,6 +697,7 @@ body {
         height: 50px;
         background: white;
         border-radius: 0px 0px 10px 10px;
+        border-bottom: 1px solid #00000061;
     }
 
     .adres__content {
@@ -826,9 +756,9 @@ body {
 
     .content__menu {
         position: fixed;
-        top: -363px;
+        top: -115%;
         left: 0px;
-        width: 100vw;
+        width: 100%;
         height: 300px;
         background-color: white;
         text-align: center;
@@ -937,6 +867,17 @@ body {
         height: 259px;
     }
 
+    .type__img {
+        left: 120px;
+    }
+
+    .type:hover .type__img {
+        position: absolute;
+        top: 50px;
+        left: 90px;
+        z-index: -1;
+    } 
+
     .trainer__type .type:nth-child(4) {
         display: none;
     }
@@ -950,7 +891,7 @@ body {
     }
 
     .type__back {
-        width: 300px;
+        width: 300.5px;
         height: 130px;
     }
 
@@ -959,14 +900,19 @@ body {
     }
 
     .section__btn {
-        max-width: 320px;
+        width: 300px;
     }
 
     .btn {
         font-size: 11px;
         text-align: center;
-        width: 100px;
+        width: 97px;
         height: 40px;
+    }
+
+    .trainer__tag {
+        grid-template-columns: 25px 268px;
+        justify-content: center;
     }
 
     .proect {
@@ -1059,6 +1005,8 @@ body {
 
     .katalog__sect {
         grid-template-rows: 133px 1fr 60px;
+        grid-template-columns: 300px;
+        justify-content: center;
     }
 
     .sect__tags {
@@ -1071,7 +1019,7 @@ body {
 
     .katalog__trainers {
         grid-row: 2;
-        grid: 130px 335px 335px 335px / 320px;
+        grid: 130px 335px 335px 335px / 300px;
         justify-items: center;
     }
 
@@ -1084,7 +1032,7 @@ body {
     }
 
     .trns__back {
-        width: 262px;
+        width: 262.5px;
     }
 
     .list__title {
@@ -1104,6 +1052,7 @@ body {
 
     .tagline__date {
         font-size: 9px;
+        width: 110px;
     }
 
     .all__aside {
@@ -1111,8 +1060,8 @@ body {
         grid-template-areas:
         "comp" 
         "comp_text" 
-        "servis"
-        "servis_text" 
+        "serv"
+        "serv_text" 
         "our" 
         "our_text" 
         "buyer" 
